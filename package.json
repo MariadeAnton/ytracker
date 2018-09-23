@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "linter": "eslint --ignore-path .gitignore .",
+    "linter-fix": "npm run linter -- --fix",
     "start": "node server.js",
     "server": "nodemon server.js"
   },
@@ -20,6 +22,8 @@
     "validator": "^10.7.1"
   },
   "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-strongloop": "^2.1.0",
     "nodemon": "^1.18.4"
   }
 }
