@@ -1,3 +1,4 @@
 module.exports = {
-  mongoURI: 'mongodb://jeremiah:password1@ds211613.mlab.com:11613/devconnector1', // eslint-disable-line max-len
+  mongoURI: 'mongodb://admin:island2018@ds113003.mlab.com:13003/ytrack', // eslint-disable-line max-len
+  secretOrKey: 'scoobydoomystery',
 };
