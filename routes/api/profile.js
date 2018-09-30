@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-// const mongoose = require('mongoose');
 const passport = require('passport');
 const validateProfileInput = require('../../validation/profile');
 const validateExperienceInput = require('../../validation/experience');
@@ -9,11 +8,6 @@ const validateEducationInput = require('../../validation/education');
 // Load models
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
-
-// @route   GET api/profile/test
-// @des     Tests profile route
-// @access  Public
-router.get('/test', (req, res) => res.json({message: 'profile works'}));
 
 // @route   GET api/profile
 // @des     Get current user profile
