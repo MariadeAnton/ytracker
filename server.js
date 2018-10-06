@@ -8,6 +8,7 @@ const captains = require('./routes/api/captains');
 const yachts = require('./routes/api/yachts');
 const company = require('./routes/api/company');
 const profile = require('./routes/api/profile');
+const yachtprofiles = require('./routes/api/yachtprofiles');
 const posts = require('./routes/api/posts');
 
 const app = express();
@@ -37,6 +38,7 @@ app.use('/api/yachts', yachts);
 app.use('/api/captains', captains);
 app.use('/api/company', company);
 app.use('/api/profile', profile);
+app.use('/api/yachtprofiles', yachtprofiles);
 app.use('/api/posts', posts);
 
 const port = process.env.PORT || 5000;
