@@ -30,21 +30,31 @@ export { default as Collapse } from '@material-ui/core/Collapse';
 export { default as Typography } from '@material-ui/core/Typography';
 export { default as Paper } from '@material-ui/core/Paper';
 export { default as SwipeableDrawer } from '@material-ui/core/SwipeableDrawer';
-export { default as List } from '@material-ui/core/List';
 export { default as Divider } from '@material-ui/core/Divider';
 
 export { default as AppBar } from '@material-ui/core/AppBar';
 export { default as Toolbar } from '@material-ui/core/Toolbar';
 export { default as Menu } from '@material-ui/core/Menu';
 export { default as MenuItem } from '@material-ui/core/MenuItem';
+export { default as BottomNavigation } from '@material-ui/core/BottomNavigation';
+export { default as BottomNavigationAction } from '@material-ui/core/BottomNavigationAction';
 
 export { default as Tabs } from '@material-ui/core/Tabs';
 export { default as Tab } from '@material-ui/core/Tab';
+
+export { default as List } from '@material-ui/core/List';
+export { default as ListItem } from '@material-ui/core/ListItem';
+export { default as ListItemIcon } from '@material-ui/core/ListItemIcon';
+export { default as ListItemText } from '@material-ui/core/ListItemText';
 
 export { default as Title } from './typography/Title';
 export { default as Headline } from './typography/Headline';
 
 // icons
+export { default as HomeIcon } from '@material-ui/icons/Home';
+export { default as BoatIcon } from '@material-ui/icons/DirectionsBoat';
+export { default as StoreIcon } from '@material-ui/icons/Store';
+export { default as RowingIcon } from '@material-ui/icons/Rowing';
 export { default as MoreVertIcon } from '@material-ui/icons/MoreVert';
 export { default as FavoriteIcon } from '@material-ui/icons/Favorite';
 export { default as ShareIcon } from '@material-ui/icons/Share';
