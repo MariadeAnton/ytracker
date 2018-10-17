@@ -1,5 +1,5 @@
 {
-  "name": "devconnector",
+  "name": "ytracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,7 +10,8 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "make test"
   },
   "author": "Jeremiah McCurdy",
   "license": "MIT",
