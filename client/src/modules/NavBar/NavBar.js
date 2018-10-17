@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, MenuIcon, Typography } from 'mui-components';
+import { AppBar, Toolbar, IconButton, MenuIcon, Typography } from '../../core/components';
 import { TopNav, BottomNav, NavDrawer } from './components';
 
 const styles = theme => ({
