@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { connect } from 'react-redux';
 
-import { Home, Yachts, Company, Captains, Users } from "./containers";
+import { Login, Yachts, Company, Captains, Users, RegisterUser } from "./containers";
 import { NavBar } from "./modules";
 import './App.css';
 
@@ -15,7 +15,8 @@ class App extends Component {
         <CssBaseline />
           <div className="App">
             <NavBar />
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Login} />
+            <Route exact path="/register" component = {RegisterUser} />
             <Route exact path="/yachts" component={Yachts} />
             <Route exact path="/company" component={Company} />
             <Route exact path="/captains" component={Captains} />

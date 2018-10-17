@@ -15,7 +15,7 @@ import {
 const styles = theme => ({
   bottomNav: {
     position: 'absolute',
-    top: 'calc(100vh - 58px)',
+    top: 'calc(100vh - 56px)',
     bottom: '0',
     right: '0',
     left: '0',

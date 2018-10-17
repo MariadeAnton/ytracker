@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
-import { AppBar, Toolbar, IconButton, MenuIcon } from 'mui-components';
+import { withStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, IconButton, MenuIcon, Typography } from 'mui-components';
 import { TopNav, BottomNav, NavDrawer } from './components';
 
-export default class NavBar extends Component {
+const styles = theme => ({
+  mobileappBar: {
+    background: 'transparent',
+    backgroundColor: 'transparent',
+    boxShadow: 'none',
+  },
+  grow: {
+    flexGrow: 1,
+  },
+});
+
+class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,20 +66,23 @@ export default class NavBar extends Component {
 
   render() {
     const { isMobile, isNavDrawerOpen, selectedIndex, accountMenuAnchor } = this.state;
+    const { classes } = this.props;
+    // const appBarClass = isMobile ? classes.mobileappBar : '';
 
     return (
-      <AppBar position="sticky" color="primary" className="header-appbar">
+      <AppBar position="sticky" color="primary" className="">
         <Toolbar className="toolbar">
-          <div className="left-menu">
-            <IconButton
-              className="icon"
-              color="inherit"
-              aria-label="Menu"
-              onClick={() => this.toggleDrawer(!isNavDrawerOpen)}
-            >
-              <MenuIcon/>
-            </IconButton>
-          </div>
+          <IconButton
+            className="icon"
+            color="inherit"
+            aria-label="Menu"
+            onClick={() => this.toggleDrawer(!isNavDrawerOpen)}
+          >
+            <MenuIcon/>
+          </IconButton>
+          <Typography variant="title" color="inherit" className={classes.grow}>
+            YTracker
+          </Typography>
           {/* <AccountMenu {...{
             isMobile,
             accountMenuAnchor,
@@ -99,3 +114,5 @@ export default class NavBar extends Component {
     );
   }
 }
+
+export default withStyles(styles)(NavBar);
