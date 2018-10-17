@@ -1,3 +1,15 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+function alert(state = {}, action) {
+  switch (action.type) {
+    case 'SUCCESS':
+      return {
+        type: 'alert-success',
+        message: action.message,
+      }
+    default:
+      return state;
+  }
+}
+
+export default combineReducers({alert});
