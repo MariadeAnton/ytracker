@@ -80,7 +80,7 @@ class NavBar extends Component {
           >
             <MenuIcon/>
           </IconButton>
-          <Typography variant="title" color="inherit" className={classes.grow}>
+          <Typography variant="h5" color="inherit" className={classes.grow}>
             YTracker
           </Typography>
           {/* <AccountMenu {...{

@@ -3,6 +3,6 @@ import Typography from '@material-ui/core/Typography';
 
 export default function Headline(props) {
   return (
-    <Typography variant="headline" {...props} />
+    <Typography variant="h1" {...props} />
   );
 }
