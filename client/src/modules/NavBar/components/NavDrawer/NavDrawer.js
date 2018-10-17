@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { SwipeableDrawer } from 'mui-components';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import { default as NavMenu } from './NavMenu';
 
 const styles = theme => ({

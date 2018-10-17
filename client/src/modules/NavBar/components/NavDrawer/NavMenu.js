@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  HomeIcon,
-  BoatIcon,
-  StoreIcon,
-  AccountCircle,
-  RowingIcon } from 'mui-components';
+import { List } from '@material-ui/core/List';
+import { ListItem } from '@material-ui/core/ListItem';
+import { ListItemText } from '@material-ui/core/ListItemText';
+import { ListItemIcon } from '@material-ui/core/';
+import { HomeIcon } from '@material-ui/icons/Home';
+import { BoatIcon } from '@material-ui/icons/DirectionsBoat';
+import { StoreIcon } from '@material-ui/icons/Store';
+import { AccountCircle } from '@material-ui/icons/AccountCircle';
+import { RowingIcon } from '@material-ui/icons/Rowing';
 
 const NavMenu = (props) => {
   const {selectedIndex, handleNavMenuItemSelect} = props;

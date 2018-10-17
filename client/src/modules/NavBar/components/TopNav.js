@@ -3,15 +3,13 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
-import {
-  Tabs,
-  Tab,
-  HomeIcon,
-  StoreIcon,
-  AccountCircle,
-  RowingIcon,
-  BoatIcon,
-} from 'mui-components';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import HomeIcon from '@material-ui/icons/Home';
+import BoatIcon from '@material-ui/icons/DirectionsBoat';
+import StoreIcon from '@material-ui/icons/Store';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import RowingIcon from '@material-ui/icons/Rowing';
 
 const styles = theme => ({
   topNav: {
