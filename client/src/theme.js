@@ -12,6 +12,9 @@ const theme = createMuiTheme({
       main: cyan['A400'],
     },
   },
+  typography: {
+    useNextVariants: true,
+  },
   overrides: {
   },
 });
