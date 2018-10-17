@@ -38,7 +38,8 @@ router.post('/register', (req, res) => {
         });
 
         const newUser = new User({
-          name: req.body.name,
+          firstname: req.body.firstname,
+          lastname: req.body.lastname,
           email,
           password: req.body.password,
           avatar,
@@ -58,7 +59,7 @@ router.post('/register', (req, res) => {
     });
 });
 
-// @route   GET api/users/login
+// @route   POST api/users/login
 // @des     Login User / Returning JWT Token
 // @access  Public
 router.post('/login', (req, res) => {
@@ -111,6 +112,31 @@ router.post('/login', (req, res) => {
         });
     });
 });
+
+// @route   GET api/users
+// @des     Get all users
+// @access  Private
+router.get(
+  '/',
+  passport.authenticate('jwt', { session: false }),
+  (req, res) => {
+    const errors = {};
+
+    User.find()
+      .then(users => {
+        if (!users) {
+          errors.nousers = 'There are no users';
+          return res.status(404).json(errors);
+        }
+
+        res.json(users);
+      })
+      .catch(err => {
+        err.msg = { users: 'There are no users' };
+        return res.status(404).json(err.msg);
+      });
+  }
+);
 
 // @route   GET api/users/current
 // @des     Return current user
